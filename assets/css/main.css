@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
 @import url("font-awesome.min.css");
 
 /*
@@ -61,6 +62,7 @@
 	.container {
 		margin-left: auto;
 		margin-right: auto;
+
 	}
 
 	.container.\31 25\25 {
@@ -1317,6 +1319,7 @@
 		background-position: top left, center 0;
 		background-attachment: fixed, fixed;
 		font-family: 'Source Sans Pro', sans-serif;
+		//font-family: 'Lobster', cursive;
 		font-size: 18pt;
 		line-height: 1.75em;
 		font-weight: 300;
@@ -1354,9 +1357,10 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Lobster', cursive;
 		font-weight: 400;
-		text-transform: uppercase;
-		line-height: 1.75em;
+		//text-transform: uppercase;
+		line-height: 1em;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1446,7 +1450,7 @@
 /* Sections/Article */
 
 	section, article {
-		margin-bottom: 3em;
+		margin-bottom: 0.5em;
 	}
 
 	section > :last-child,
@@ -1465,6 +1469,9 @@
 	.image {
 		display: inline-block;
 		border: 0;
+	}
+	.image:hover {
+		box-shadow: 0 0 10px rgba(0,0,0,0.8);
 	}
 
 		.image img {
@@ -1526,7 +1533,7 @@
 			display: inline-block;
 			width: 2.5em;
 			height: 2.5em;
-			line-height: 2.5em;
+			line-height: 1em;
 			text-align: center;
 			border: 0;
 		}
@@ -2001,7 +2008,8 @@
 		color: #fff;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
-		background: #35b88f url("images/banner.svg") bottom center no-repeat;
+		background: #c4c4c4 url("images/banner.svg") bottom center no-repeat;
+		//background: #35b88f url("images/banner.jpg") center center no-repeat;
 		padding: 5em 0 5em 0;
 		margin: 0;
 		background-size: 125% auto;
@@ -2076,7 +2084,8 @@
 			border-radius: 3em;
 			border: solid 1px #fff;
 			display: inline-block;
-			margin: 0 0 3em 0;
+			margin: 0 0 2em 0;
+			text-align: center;
 		}
 
 		#footer .copyright {
@@ -2532,11 +2541,51 @@
 
 	}
 	.main_nav{
-		margin-top: 2px;
+		font-family: 'Lobster', cursive;
+		padding: 0px;
+		margin-top: 10px;
 		color: #fff;
-		text-align: right;
+		font-size: 17px;
+		text-align: center;
 
 }
 .main_nav:hover {
 	color: #fff;
 }
+.main_nav_bar
+{
+	/*background-color: #183026;
+	background-image: url(../../images/pic02.jpg);
+	background-size: cover;
+	border: 10px;*/
+}
+.adress {
+	font-family: 'Lobster', cursive;
+	    margin-top: 2px;
+		color: #fff;
+		text-align: center;
+		font-size: 20px;
+		
+	}
+	.label_text {
+		font-size: 50%;
+	}
+	.contact {
+			display: inline-block;
+		    padding: 0.75em 2em 0.75em 2em;
+			border-radius: 3em;
+			border: solid 1px #fff;
+			display: block;
+			margin: 0 0 2em 0;
+			text-align: center;
+			}
+	/*.about {
+		color: #fff;
+		background-color: #c4c4c4;
+		opacity: 0.5;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		border-radius: 5px;
+	}*/
