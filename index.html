@@ -13,6 +13,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" media="all" href="assets/css/animate.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
@@ -39,7 +40,7 @@
 		
 </section>
 		<!-- Header -->
-			<section id="header">
+			<section id="header" class="swing">
 				<header>
 					<h1 class="title">Лофт-кальянная на Красном Октябре <br>Лухари <br>Luhari.hookah
 					</h1>
@@ -51,7 +52,7 @@
 			</section>
 
 		<!-- Banner -->
-			<section id="banner">
+			<section id="banner" class="fadeInRight wow" duration="500ms" data-wow-delay="500ms">
 				<header>
 					<h2>О нас</h2>
 				</header>
@@ -66,7 +67,7 @@
 
 	<!-- Feature 1 -->
 		
-			<article id="first" class="container box style1 right">
+			<article id="first" class="container box style1 right fadeInRight wow" duration="500ms" data-wow-delay="500ms">
 				<a href="#" class="image fit"><img src="images/k1.jpg" alt="" /></a>
 				<div class="inner text-center">
 					<header>
@@ -78,7 +79,7 @@
 			</article>
 
 		<!-- Feature 2 -->
-			<article class="container box style1 left">
+			<article class="container box style1 left fadeInLeft wow" duration="500ms" data-wow-delay="500ms">
 
 				<a href="#" class="image fit"><img src="images/k2.jpg" alt="" /></a>
 				<div class="inner text-center">
@@ -88,14 +89,14 @@
 			</article>
 
 			<!--Меню-->
-			<section id="banner-menu">
+			<section id="banner-menu" class="fadeInDown wow" duration="500ms" data-wow-delay="500ms">
 				<header>
 					<h2>Меню</h2>
 				</header>
 				<div class="container">
-				<a href="#" class="menu-img"><img class="menu-img" src="images/menu1.jpg" alt="" /></a>
+				<a href="#" class="menu-img"><img class="menu-img fadeInDown wow" src="images/menu1.jpg" alt="" duration="700ms" data-wow-delay="700ms"/></a>
 				
-				<a href="#" class="menu-img"><img class="menu-img" src="images/menu2.jpg" alt="" /></a>
+				<a href="#" class="menu-img"><img class="menu-img fadeInDown wow" src="images/menu2.jpg" alt="" duration="1000ms" data-wow-delay="1000ms"/></a>
 				</div>
 				<footer>
 					<a href="#fotogal" class="button style2 scrolly">Фотогалерея</a>
@@ -103,7 +104,7 @@
 			</section>
 
 		<!-- Portfolio -->
-			<article id="fotogal" class="container box style2">
+			<article id="fotogal" class="container box style2 fadeInUp wow" duration="500ms" data-wow-delay="500ms">
 				<header>
 					<h2>Фотогалерея</h2>
 					<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error consequatur culpa animi modi suscipit consectetur expedita, nihil aspernatur iusto laudantium?</p>-->
@@ -350,7 +351,11 @@
 		</section>
 
 		<!-- Scripts -->
+			<script src="assets/js/wow.min.js"></script>
+			<script>new WOW().init();</script>
+
 			<script src="assets/js/jquery.min.js"></script>
+			
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>

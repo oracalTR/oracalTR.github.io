@@ -1775,6 +1775,7 @@
 		position: relative;
 		margin-top: 9em;
 		margin-bottom: 0;
+		box-shadow: 0 0 15px rgba(255,255,255,0.8);
 	}
 
 		.box:after {
@@ -2611,6 +2612,7 @@
 		margin: 0;
 		margin-top: 5%;
 		background-size: 125% auto;
+
 	}
 
 		#banner-menu .button {
@@ -2652,3 +2654,88 @@
 
 
 }
+
+/*Эффекты при наведении*/
+ @-webkit-keyframes swing
+        {
+            15%
+            {
+                -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+            }
+            
+            30%
+            {
+                -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
+            }
+            
+            50%
+            {
+                -webkit-transform: translateX(3px);
+                transform: translateX(3px);
+            }
+            
+            65%
+            {
+                -webkit-transform: translateX(-3px);
+                transform: translateX(-3px);
+            }
+            
+            80%
+            {
+                -webkit-transform: translateX(2px);
+                transform: translateX(2px);
+            }
+            
+            100%
+            {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+        }
+        @keyframes swing
+        {
+            15%
+            {
+                -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+            }
+            
+            30%
+            {
+                -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
+            }
+            
+            50%
+            {
+                -webkit-transform: translateX(3px);
+                transform: translateX(3px);
+            }
+            
+            65%
+            {
+                -webkit-transform: translateX(-3px);
+                transform: translateX(-3px);
+            }
+            
+            80%
+            {
+                -webkit-transform: translateX(2px);
+                transform: translateX(2px);
+            }
+            
+            100%
+            {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+        }
+        .swing:hover
+        {
+            -webkit-animation: swing 1s ease;
+            animation: swing 1s ease;
+            -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+        }
