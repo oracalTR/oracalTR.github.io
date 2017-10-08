@@ -1313,7 +1313,8 @@
 
 	body {
 		background-color: #183026;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		/*background-image: url("images/overlay.png"), url("../../images/bg.jpg");*/
+		background-image: url("../../images/bg.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
 		background-position: top left, center 0;
@@ -1359,8 +1360,9 @@
 	h1, h2, h3, h4, h5, h6 {
 		font-family: 'Lobster', cursive;
 		font-weight: 400;
-		//text-transform: uppercase;
+		/*text-transform: uppercase;*/
 		line-height: 1em;
+		
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1469,9 +1471,14 @@
 	.image {
 		display: inline-block;
 		border: 0;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		border-radius: 5px;
 	}
 	.image:hover {
-		box-shadow: 0 0 10px rgba(0,0,0,0.8);
+		box-shadow: 0 0 10px rgba(255,255,255,0.8);
 	}
 
 		.image img {
@@ -1799,18 +1806,20 @@
 
 		.box.style1 {
 			background: #fff;
-			padding: 3em;
-		}
+			padding: 3.3em;
+			}
 
 			.box.style1 .image {
-				display: block;
-				position: absolute;
+				/*display: block;*/
+				/*position: absolute;*/
 				top: 0;
 				width: 50%;
 				height: 100%;
-				background: #152E33;
+				background: #fff;
 				overflow: hidden;
-			}
+				/*background-image: url(../../images/bg.jpg);*/
+
+				}
 
 				.box.style1 .image img {
 					position: absolute;
@@ -1828,12 +1837,12 @@
 			}
 
 				.box.style1.right .image img {
-					right: 0;
+					left: 0;
 				}
 
 			.box.style1.right .inner {
 				margin-left: 50%;
-				padding-left: 3em;
+				padding-left: 5em;
 			}
 
 			.box.style1.left .image {
@@ -1841,12 +1850,12 @@
 			}
 
 				.box.style1.left .image img {
-					left: 0;
+					right: 0;
 				}
 
 			.box.style1.left .inner {
 				margin-right: 50%;
-				padding-right: 3em;
+				padding-right: 5em;
 			}
 
 		.box.style2 {
@@ -1949,7 +1958,7 @@
 
 			#header header h1 {
 				font-weight: 600;
-				font-size: 2em;
+				font-size: 1.5em;
 				letter-spacing: 10px;
 			}
 
@@ -2261,7 +2270,8 @@
 
 			body {
 				background-color: #203936;
-				background-image: url("images/overlay.png"), url("../../images/bg-alt.jpg");
+				/*background-image: url("images/overlay.png"), url("../../images/bg-alt.jpg");*/
+				background-image: url("../../images/bg-alt.jpg");
 				background-repeat: repeat, no-repeat;
 				background-size: auto, 100% auto;
 				background-position: top left, top center;
@@ -2437,13 +2447,14 @@
 
 						.box.style1 .image img {
 							position: relative;
+							margin: auto;
 							height: auto;
 							width: 100%;
 						}
 
 					.box.style1 .inner {
 						margin: 0 !important;
-						padding: 2em 1.25em 2em 1.25em !important;
+						padding: 2em 1.25em 3em 1.25em !important;
 					}
 
 				.box.style2 .inner .row:before {
@@ -2541,7 +2552,7 @@
 
 	}
 	.main_nav{
-		font-family: 'Lobster', cursive;
+		font-family: 'Lobster', cursive, sans-serif;
 		padding: 0px;
 		margin-top: 10px;
 		color: #fff;
@@ -2588,3 +2599,56 @@
 		-o-border-radius: 5px;
 		border-radius: 5px;
 	}*/
+
+#banner-menu {
+		position: relative;
+		color: #fff;
+		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+		text-align: center;
+		background: #c4c4c4 url("../../images/bgmenu.jpg") bottom center no-repeat;
+		//background: #35b88f url("images/banner.jpg") center center no-repeat;
+		padding: 5em 0 5em 0;
+		margin: 0;
+		margin-top: 5%;
+		background-size: 125% auto;
+	}
+
+		#banner-menu .button {
+			color: #35b882;
+			text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
+		}
+
+		#banner-menu header {
+			margin: 0 0 2em 0;
+		}
+
+			#banner-menu header h2 {
+				font-weight: 400;
+				font-size: 1.75em;
+				letter-spacing: 8px;
+			}
+
+		#banner-menu p {
+			margin: 0;
+		}
+
+		#banner-menu footer {
+			margin: 2em 0 0 0;
+		}
+
+		#banner-menu a {
+			color: inherit;
+			border-bottom-color: rgba(255, 255, 255, 0.5);
+		}
+
+			#banner-menu a:hover {
+				border-bottom-color: rgba(255, 255, 255, 0);
+			}
+#banner-menu .menu-img {
+	position: relative;
+	display: inline-block;
+	height: 80vh;
+	text-align: left;
+
+
+}
