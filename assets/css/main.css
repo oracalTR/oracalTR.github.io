@@ -2656,6 +2656,11 @@
 
 }
 
+.img-thumbs {
+	display: block;
+	border-radius:5px;
+}
+
 /*Эффекты при наведении*/
  @-webkit-keyframes swing
         {
