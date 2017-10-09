@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
-@import url("https://fonts.googleapis.com/css?family=Lobster");
+/*@import url("https://fonts.googleapis.com/css?family=Lobster");*/
+@import url('https://fonts.googleapis.com/css?family=Lobster&subset=cyrillic');
 @import url("font-awesome.min.css");
 
 /*
@@ -1315,6 +1316,7 @@
 		background-color: #183026;
 		/*background-image: url("images/overlay.png"), url("../../images/bg.jpg");*/
 		background-image: url("../../images/bg.jpg");
+		opacity: 0.9;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
 		background-position: top left, center 0;
@@ -1827,6 +1829,7 @@
 					top: 0;
 					height: 100%;
 					width: auto;
+					
 				}
 
 			.box.style1 .inner > :last-child {
@@ -1861,6 +1864,7 @@
 
 		.box.style2 {
 			text-align: center;
+			background-image: url(../../images/bg-alt-foto.jpg);
 		}
 
 			.box.style2 header {
@@ -2015,7 +2019,7 @@
 
 	#banner {
 		position: relative;
-		color: #fff;
+		color: black;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
 		background: #c4c4c4 url("images/banner.svg") bottom center no-repeat;
@@ -2273,6 +2277,7 @@
 				background-color: #203936;
 				/*background-image: url("images/overlay.png"), url("../../images/bg-alt.jpg");*/
 				background-image: url("../../images/bg-alt.jpg");
+				opacity: 0.9;
 				background-repeat: repeat, no-repeat;
 				background-size: auto, 100% auto;
 				background-position: top left, top center;
@@ -2511,6 +2516,7 @@
 		/* Banner */
 
 			#banner {
+				color: black;
 				padding: 3em 2em 3em 2em;
 				background-size: auto 150%;
 			}
@@ -2553,6 +2559,7 @@
 
 	}
 	.main_nav{
+		display: inline-block;
 		font-family: 'Lobster', cursive, sans-serif;
 		padding: 0px;
 		margin-top: 10px;
@@ -2572,7 +2579,9 @@
 	border: 10px;*/
 }
 .adress {
-	font-family: 'Lobster', cursive;
+	padding: 25px;
+		display: inline-block;
+		font-family: 'Lobster', cursive;
 	    margin-top: 2px;
 		color: #fff;
 		text-align: center;
@@ -2583,12 +2592,14 @@
 		font-size: 50%;
 	}
 	.contact {
+		color: black;
 			display: block;
 		    padding: 0.75em 2em 0.75em 2em;
 			border-radius: 3em;
 			border: solid 1px #fff;
 			margin: 0 0 2em 0;
 			text-align: center;
+			background: #c4c4c4 url("images/banner.svg") bottom center no-repeat;
 			box-shadow: 0 0 15px rgba(255,255,255,0.8);
 			}
 	/*.about {
@@ -2660,9 +2671,22 @@
 	display: block;
 	border-radius:5px;
 }
-
+.maps {
+	height: 50vh;
+	display: inline-block;
+	text-align: center;
+	/*margin: auto;*/
+}
+.img-logo {
+	width: 100%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+}
 /*Эффекты при наведении*/
- @-webkit-keyframes swing
+ /*@-webkit-keyframes swing
         {
             15%
             {
@@ -2744,4 +2768,4 @@
             animation: swing 1s ease;
             -webkit-animation-iteration-count: 1;
             animation-iteration-count: 1;
-        }
+        }*/
