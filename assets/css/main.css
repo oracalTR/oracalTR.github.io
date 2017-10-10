@@ -2684,7 +2684,7 @@
 	display: inline-block;
 	margin: auto;
 	text-align: center;
-	margin-top: 2%;
+	padding: 2px;
 	width: 20vh;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
