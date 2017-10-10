@@ -2562,14 +2562,16 @@
 		display: inline-block;
 		font-family: 'Lobster', cursive, sans-serif;
 		padding: 0px;
+		padding-left: 50px;
 		margin-top: 10px;
 		color: #fff;
 		font-size: 17px;
 		text-align: center;
 
 }
+
 .main_nav:hover {
-	color: #fff;
+	
 }
 .main_nav_bar
 {
@@ -2589,7 +2591,7 @@
 		
 	}
 	.label_text {
-		font-size: 50%;
+			font-size: 50%;
 	}
 	.contact {
 		color: black;
@@ -2678,7 +2680,11 @@
 	/*margin: auto;*/
 }
 .img-logo {
-	width: 100%;
+
+	display: inline-block;
+	margin: auto;
+	text-align: center;
+	width: 20vh;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
