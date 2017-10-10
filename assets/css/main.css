@@ -2276,7 +2276,6 @@
 				background-color: #203936;
 				/*background-image: url("images/overlay.png"), url("../../images/bg-alt.jpg");*/
 				background-image: url("../../images/bg-alt.png");
-				opacity: 0.9;
 				background-repeat: repeat, repeat;
 				background-size: auto, 100% auto;
 				/*background-size: cover;*/
