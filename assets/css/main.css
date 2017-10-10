@@ -2716,6 +2716,8 @@
 }
 
 .slider {
+	padding-left:15px;
+	text-align: center;
 	width: 80vw;
 }
 
