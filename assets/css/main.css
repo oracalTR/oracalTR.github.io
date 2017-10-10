@@ -2290,7 +2290,7 @@
 			}
 
 			h1, h2, h3, h4, h5, h6 {
-				line-height: 1.5em;
+				line-height: 1.5em;				
 
 			}
 
@@ -2311,6 +2311,7 @@
 
 				.box.style1 {
 					padding: 2.5em 2em 2.5em 2em;
+
 				}
 
 					.box.style1.right .inner {
@@ -2354,7 +2355,7 @@
 		/* Basic */
 
 			* {
-				text-shadow: none !important;
+				/*text-shadow: none !important;*/
 			}
 
 			body, input, textarea, select {
@@ -2363,8 +2364,13 @@
 				letter-spacing: 0;
 			}
 
-			h2, h3, h4, h5, h6 {
+			h1, h2, h3, h4, h5, h6 {
 				font-size: 1em;
+				-webkit-text-shadow: 3px 3px 5px black;
+				-moz-text-shadow: 3px 3px 5px black;
+				-ms-text-shadow: 3px 3px 5px black;
+				-o-text-shadow: 3px 3px 5px black;
+				text-shadow: 3px 3px 5px black;
 			}
 
 			h2 {
@@ -2564,8 +2570,8 @@
 		font-family: 'Lobster', cursive, sans-serif;
 		margin: auto;
 		padding: 0px;
-		padding-left: 70px;
-		padding-right: 70px;
+		padding-left: 50px;
+		padding-right: 50px;
 		margin-top: 10px;
 		color: #fff;
 		font-size: 15px;
@@ -2697,12 +2703,11 @@
 
 }
 .logo {
+	display: inline-block;
 	padding-top: 25px;
 	font-size: 60px;
 	font-family: 'Lobster', cursive;
-	display: inline-block;
 	margin: auto;
-	width: 24vh;
 	position: relative;
 	color: #fff;
 	text-align: center;
