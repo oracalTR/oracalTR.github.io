@@ -2714,6 +2714,14 @@
 	margin: auto;
 
 }
+
+.slider {
+	width: 80vw;
+}
+
+
+
+
 /*Эффекты при наведении*/
  /*@-webkit-keyframes swing
         {
