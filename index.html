@@ -388,15 +388,20 @@
 		   <h2>Отправка сообщения</h2>
 		   <br>
 		
-		   <form id="contact" name="contact" action="#" method="post">
-		      <input type="text" id="your_name" name="your_name" placeholder="Ваше Имя">
-		      <br>
-		      <input type="text" id="phone" name="phone" placeholder="Ваш телефон">
-		      <br>
-		      <input type="email" id="email" name="email" placeholder="Ваш E-mail">
-		      <br>
+		   <form id="form_contact" name="form_contact" action="" method="POST">
+		      <input type="text" id="your_name" name="your_name" placeholder="Ваше Имя" required>
+		      <p></p>
+		      <input type="text" id="phone" name="phone" placeholder="Ваш телефон" required>
+		      <p></p>
+		      <label for="date">Выберите дату и время.</label>
+		      <input type="date" id="date" name="date" value="2017-10-01" required>
+		      <input type="time" id="time" name="time" value="20:40" required><p></p>
+		      <input type="text" id="kolper" name="kolper" placeholder="Количество персон" required>
+		      <p></p>
+		      <input type="email" id="email" name="email" placeholder="Ваш E-mail" required>
 		      <label for="msg">Введите сообщение</label>
-		      <textarea id="msg" name="msg" height:20px;"></textarea>
+		      <textarea id="msg" name="msg"></textarea>
+		      <p></p>
 		      <label for="pd" class="mintext">Нажимая кнопку "Отправить Заказ" Вы соглашаетесь на обработку Ваших данных.</label>
 		      <button id="send">Отправить Заказ</button>
 		   </form>
@@ -458,13 +463,51 @@
 			</div>
 			</div>
 		</section>
+		
+
 
 		<!-- Scripts -->
 		<!-- Анимашки-->
 			<!--<script src="assets/js/wow.min.js"></script>
 			<script>new WOW().init();</script>-->
 			<script src="assets/js/jquery.min.js"></script>
+			<!-- <script>
+				$(document).ready(function() {
+			
+				$("#form_contact").submit(function() {
+					$.ajax({
+			type: "POST",
+			url: "smart.php",
+			data: $(this).serialize()
+					}).done(function() {
+			$(this).find("input").val("");
+			alert("Спасибо за заявку! Скоро мы с Вами свяжемся!");
+			$("#form_contact").trigger("reset");
+					});
+					return false;
+				});
+				</script> -->
 			<!-- <script type="text/javascript" src="fancybox/jquery.fancybox.js"></script> -->
+			<!--Форма-->
+			<script>
+			$(document).ready(function() {
+
+	$("#form_contact").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "smart.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			alert("Ваша заявка отправлена! С Вами обязательно свяжутся!");
+			$("#form_contact").trigger("reset");
+		});
+		return false;
+	});
+	
+});
+			</script>
+			<!-- Конец формы -->
 			<script src="assets/js/fotorama.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
@@ -472,7 +515,7 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+			
 
 	</body>
 </html>
