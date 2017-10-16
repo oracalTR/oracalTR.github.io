@@ -1808,7 +1808,7 @@
 
 		.box.style1 {
 			background: #fff;
-			padding: 3.3em;
+			padding: 4.3em;
 			}
 
 			.box.style1 .image {
@@ -1909,7 +1909,7 @@
 				.box.style2 .inner .image {
 					position: relative;
 					z-index: 1;
-					padding: 20px;
+					padding: 5px;
 				}
 
 		.box.style3 {
@@ -2477,7 +2477,7 @@
 				.box.style2 .inner .image {
 					padding: 0;
 					max-width: 250px;
-					margin: 0 auto 20px auto;
+					margin: 0 auto 10px auto;
 				}
 
 				.box.style3 {
