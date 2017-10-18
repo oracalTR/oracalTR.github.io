@@ -1,11 +1,5 @@
 <?php 
-$your_name = $_POST['your_name'];
 $phone = $_POST['phone'];
-$date = $_POST['date'];
-$time = $_POST['time'];
-$kolper = $_POST['kolper'];
-$email = $_POST['email'];
-$msg = $_POST['msg'];
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
@@ -31,7 +25,7 @@ $mail->addAddress('oracal@mail.ru', 'Info Hookah');     // Add a recipient
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка с сайта';
-$mail->Body    = "Имя пользователя:".htmlspecialchars($your_name)."<br /> Телефон:".htmlspecialchars($phone)."<br /> Дата:".htmlspecialchars($date)."<br /> Дата: ГГГГ-ММ-ДД <br /> Время:".htmlspecialchars($time)."<br /> Количество персон:".htmlspecialchars($kolper)."<br /> E-mail:".htmlspecialchars($email)."<br /> Сообщение:".htmlspecialchars($msg)."<br />";
+$mail->Body    = "Клиент просит перезвонить на телефон:".htmlspecialchars($phone)."<br />";
 $mail->AltBody = 'Это сообщение в формате plain text';
 
 if(!$mail->send()) {
