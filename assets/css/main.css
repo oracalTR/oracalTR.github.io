@@ -2863,7 +2863,7 @@
     	top: 0;
     	left: 0;
     	padding-top: 300px;
-    	font-size: 20px;
+    	font-size: 15px;
     	z-index: 999;
     	color: black;
 
@@ -2896,8 +2896,8 @@
     }
    
 .popup_btn_da {
-	
-   	background: red;
+	margin-top: 10px;
+	background: red;
    	display: inline-block;
    	padding: 15px 35px;
    	-webkit-border-radius: 10px;
@@ -2910,7 +2910,7 @@
    	border: 1px solid;
    	border-color: black;
    	box-shadow: 10px 14px 28px rgba(255,255,255,0.25), 10px 10px 10px rgba(0,0,0,0.22);
-
+	
 
 
    }
@@ -2940,6 +2940,7 @@
 
    }
    .popup_btn_net {
+   	margin-top: 10px;
    	background: #fff;
    	display: inline-block;
    	padding: 15px 35px;
@@ -2953,6 +2954,7 @@
    	border: 1px solid;
    	border-color: red;	
    	box-shadow: 10px 14px 28px rgba(255,255,255,0.25), 10px 10px 10px rgba(0,0,0,0.22);
+
    }
    .popup_btn_net:hover {
    	background: #fff;
@@ -3059,10 +3061,11 @@
    	z-index: 2;
    }
    .popup_18 {
-   	display: block;
-   	margin-left: 25%;
-   	width: 50%;
-   	height: 60%;
+   	display: inline-block;
+   	text-align: center;
+   	/* margin-left: 25%; */
+   	width: 70%;
+   	height: 70%;
    	background: #fff;
    	-webkit-border-radius: 10px;
    	-moz-border-radius: 10px;
