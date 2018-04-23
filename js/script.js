@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			crime = document.getElementById('crime'),
 			arr = [],
 			customInfo = document.getElementsByClassName('custom-info')[0],
-			personDiv = 'photo photo-1',
+			personDiv = 'photo photo-0',
 			skin = document.getElementsByClassName('person-skin')[0],
 			clothes = document.getElementsByClassName('person-clothes')[0],
 			hair = document.getElementsByClassName('person-hair')[0];
@@ -51,6 +51,9 @@ window.addEventListener('DOMContentLoaded', function () {
 			customChildKand[1].style.display = 'block';
 			customChildKand[3].style.display = 'block';
 			customChildKand[5].style.display = 'block';
+			skin.style.backgroundImage = 'url(../img/skin/skin-'+0+'.png)';
+			clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-'+0+'.png)';
+			hair.style.backgroundImage = 'url(../img/hair/construct/hair-'+0+'.png)';
 			
 
 		function myAnimation() {
@@ -74,44 +77,77 @@ window.addEventListener('DOMContentLoaded', function () {
 
 		//Slider
 	
-		let slideIndex = 0,
+		let i = 0,
 		slides = document.getElementsByClassName('slider-item'),
 		prev = document.getElementsByClassName('prev')[0],
 		next = document.getElementsByClassName('next')[0];
 		person = document.getElementsByClassName('person-easy')[0];
-		slides[0].style.display = 'block'
+		slides[0].style.display = 'block';
+		// slides[i].style.display = '';
 		console.log(slides);
 		console.log(person);
 
 		prev.addEventListener('click', moveLeft);
 			function moveLeft() {
-				prev.style.display = 'block';
-				slides[1].style.display = 'none';
-				slides[0].style.display = 'block';
+					prev.style.display = 'block';
+					slides[i].style.display = 'none';
+					skin.style.backgroundImage = 'url(../img/skin/skin-'+i+'.png)';
+					clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-'+i+'.png)';
+					hair.style.backgroundImage = 'url(../img/hair/construct/hair-'+i+'.png)';
+				    i = i - 1; //i++
+				    if( i < 0) {
+				      i = slides.length - 1;
+				    }
+				slides[i].style.display = 'block';
+				if ( i != 1) {
+				man.value = 'Мужской';
+				girl.value = '';
 				man.checked = 'checked';
 				girl.checked = '';
-				man.value = 'Мужкой';
-				girl.value = '';
-				personDiv = 'photo photo-1';
-				skin.style.backgroundImage = 'url(../img/skin/skin-1.png)';
-				clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-1.png)';
-				hair.style.backgroundImage = 'url(../img/hair/construct/hair-1.png)';
-
-			}
+				} else {
+						man.value = '';
+						girl.value = 'Женский';
+						man.checked = '';
+						girl.checked = 'checked';
+				}
+				// man.checked = 'checked';
+				// girl.checked = '';
+				// man.value = 'Мужкой';
+				// girl.value = '';
+				personDiv = 'photo photo-'+i+'';
+				skin.style.backgroundImage = 'url(../img/skin/skin-'+i+'.png)';
+				clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-'+i+'.png)';
+				hair.style.backgroundImage = 'url(../img/hair/construct/hair-'+i+'.png)';
+				
+}
 
 		next.addEventListener('click', moveRigth);
 			function moveRigth() {
 				next.style.display = 'block';
-				slides[0].style.display = 'none';
-				slides[1].style.display = 'block';
-				man.checked = '';
-				girl.checked = 'checked';
+				slides[i].style.display = 'none';
+				    i = i + 1; //i++
+				    if( i >= slides.length) {
+				      i = 0;  
+				    }
+				    slides[i].style.display = 'block';
+				
+				/*slides[0].style.display = 'none';
+				slides[1].style.display = 'block';*/
+				if ( i == 1) {
 				man.value = '';
 				girl.value = 'Женский';
-				personDiv = 'photo photo-2';
-				skin.style.backgroundImage = 'url(../img/skin/skin-4.png)';
-				clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-5.png)';
-				hair.style.backgroundImage = 'url(../img/hair/construct/hair-5.png)';
+				man.checked = '';
+				girl.checked = 'checked';
+				} else {
+						man.value = 'Мужской';
+						girl.value = '';
+						man.checked = 'checked';
+						girl.checked = '';
+				}
+				personDiv = 'photo photo-'+i+'';
+				skin.style.backgroundImage = 'url(../img/skin/skin-'+i+'.png)';
+				clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-'+i+'.png)';
+				hair.style.backgroundImage = 'url(../img/hair/construct/hair-'+i+'.png)';
 	
 			}
 
@@ -120,30 +156,39 @@ window.addEventListener('DOMContentLoaded', function () {
 		//End slider
 
 		man.addEventListener('click', function() {
-			man.value = 'Мужкой';
-			girl.value = '';
+			
 			slides[1].style.display = 'none';
 			slides[0].style.display = 'block';
-			personDiv = 'photo photo-1';
-			skin.style.backgroundImage = 'url(../img/skin/skin-1.png)';
-			clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-1.png)';
-			hair.style.backgroundImage = 'url(../img/hair/construct/hair-1.png)';
+			man.value = 'Мужской';
+			girl.value = '';
+			man.checked = 'checked';
+			girl.checked = '';
+			personDiv = 'photo photo-'+i+'';
+			skin.style.backgroundImage = 'url(../img/skin/skin-'+0+'.png)';
+			clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-'+0+'.png)';
+			hair.style.backgroundImage = 'url(../img/hair/construct/hair-'+0+'.png)';
 		});
 
 		girl.addEventListener('click', function() {
-			man.value = '';
-			girl.value = 'Женский';
+			// man.value = '';
+			// girl.value = 'Женский';
 			slides[0].style.display = 'none';
 			slides[1].style.display = 'block';
-			personDiv = 'photo photo-2';
-			skin.style.backgroundImage = 'url(../img/skin/skin-4.png)';
-			clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-5.png)';
-			hair.style.backgroundImage = 'url(../img/hair/construct/hair-5.png)';
+			man.value = '';
+			girl.value = 'Женский';
+			man.checked = '';
+			girl.checked = 'checked';
+			personDiv = 'photo photo-1';
+			i = 1;
+			skin.style.backgroundImage = 'url(../img/skin/skin-'+1+'.png)';
+			clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-'+1+'.png)';
+			hair.style.backgroundImage = 'url(../img/hair/construct/hair-'+1+'.png)';
 
 		});
 
 		
 		ready.addEventListener('click', function() {
+			personDiv = 'photo photo-'+i+'';
 			if (nameFIO.value == '' || age.value == '' || bio.value == '') {
 				
 				alert('Необходимо заполнить все поля для добавления Кандидата!');
@@ -187,12 +232,14 @@ window.addEventListener('DOMContentLoaded', function () {
 			girl.checked = '';
 			man.value = 'Мужкой';
 			girl.value = '';
+			slides[0].style.display = 'block'
 			slides[1].style.display = 'none';
-			slides[0].style.display = 'block';
-			personDiv = 'photo photo-1';
-			skin.style.backgroundImage = 'url(../img/skin/skin-1.png)';
-			clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-1.png)';
-			hair.style.backgroundImage = 'url(../img/hair/construct/hair-1.png)';
+			slides[2].style.display = 'none';
+			personDiv = 'photo photo-0';
+			skin.style.backgroundImage = 'url(../img/skin/skin-0.png)';
+			clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-0.png)';
+			hair.style.backgroundImage = 'url(../img/hair/construct/hair-0.png)';
+			i = 0;
 
 
 		});

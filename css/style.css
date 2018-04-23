@@ -128,10 +128,13 @@
           height: 195px;
           margin-right: 30px;
           background-size: cover; }
+          .main-cards-item .candidate-block .photo-0 {
+            background: url(../img/candidate-0.png) center no-repeat; }
           .main-cards-item .candidate-block .photo-1 {
             background: url(../img/candidate-1.png) center no-repeat; }
           .main-cards-item .candidate-block .photo-2 {
-            background: url(../img/candidate-2.png) center no-repeat; }
+            background: url(../img/candidate-2.png) center no-repeat; 
+          }
         .main-cards-item .candidate-block .result {
           display: -webkit-box;
           display: -ms-flexbox;
