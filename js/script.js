@@ -157,8 +157,10 @@ window.addEventListener('DOMContentLoaded', function () {
 
 		man.addEventListener('click', function() {
 			
+			slides[2].style.display = 'none';
 			slides[1].style.display = 'none';
 			slides[0].style.display = 'block';
+			i = 0;
 			man.value = 'Мужской';
 			girl.value = '';
 			man.checked = 'checked';
@@ -172,6 +174,7 @@ window.addEventListener('DOMContentLoaded', function () {
 		girl.addEventListener('click', function() {
 			// man.value = '';
 			// girl.value = 'Женский';
+			slides[2].style.display = 'none';
 			slides[0].style.display = 'none';
 			slides[1].style.display = 'block';
 			man.value = '';
