@@ -22,7 +22,10 @@ window.addEventListener('DOMContentLoaded', function () {
 			crime = document.getElementById('crime'),
 			arr = [],
 			customInfo = document.getElementsByClassName('custom-info')[0],
-			personDiv = 'photo photo-1';
+			personDiv = 'photo photo-1',
+			skin = document.getElementsByClassName('person-skin')[0],
+			clothes = document.getElementsByClassName('person-clothes')[0],
+			hair = document.getElementsByClassName('person-hair')[0];
 			
 
 
@@ -37,7 +40,7 @@ window.addEventListener('DOMContentLoaded', function () {
 						vz = 'Правые';
 					} 
 			});
-			console.log(resultGolos);
+			console.log(skin);
 	
 
 
@@ -90,6 +93,10 @@ window.addEventListener('DOMContentLoaded', function () {
 				man.value = 'Мужкой';
 				girl.value = '';
 				personDiv = 'photo photo-1';
+				skin.style.backgroundImage = 'url(../img/skin/skin-1.png)';
+				clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-1.png)';
+				hair.style.backgroundImage = 'url(../img/hair/construct/hair-1.png)';
+
 			}
 
 		next.addEventListener('click', moveRigth);
@@ -102,6 +109,9 @@ window.addEventListener('DOMContentLoaded', function () {
 				man.value = '';
 				girl.value = 'Женский';
 				personDiv = 'photo photo-2';
+				skin.style.backgroundImage = 'url(../img/skin/skin-4.png)';
+				clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-5.png)';
+				hair.style.backgroundImage = 'url(../img/hair/construct/hair-5.png)';
 	
 			}
 
@@ -115,6 +125,9 @@ window.addEventListener('DOMContentLoaded', function () {
 			slides[1].style.display = 'none';
 			slides[0].style.display = 'block';
 			personDiv = 'photo photo-1';
+			skin.style.backgroundImage = 'url(../img/skin/skin-1.png)';
+			clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-1.png)';
+			hair.style.backgroundImage = 'url(../img/hair/construct/hair-1.png)';
 		});
 
 		girl.addEventListener('click', function() {
@@ -123,6 +136,9 @@ window.addEventListener('DOMContentLoaded', function () {
 			slides[0].style.display = 'none';
 			slides[1].style.display = 'block';
 			personDiv = 'photo photo-2';
+			skin.style.backgroundImage = 'url(../img/skin/skin-4.png)';
+			clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-5.png)';
+			hair.style.backgroundImage = 'url(../img/hair/construct/hair-5.png)';
 
 		});
 
