@@ -99,21 +99,6 @@ window.addEventListener('DOMContentLoaded', function () {
 				      i = slides.length - 1;
 				    }
 				slides[i].style.display = 'block';
-				if ( i != 1) {
-				man.value = 'Мужской';
-				girl.value = '';
-				man.checked = 'checked';
-				girl.checked = '';
-				} else {
-						man.value = '';
-						girl.value = 'Женский';
-						man.checked = '';
-						girl.checked = 'checked';
-				}
-				// man.checked = 'checked';
-				// girl.checked = '';
-				// man.value = 'Мужкой';
-				// girl.value = '';
 				personDiv = 'photo photo-'+i+'';
 				skin.style.backgroundImage = 'url(../img/skin/skin-'+i+'.png)';
 				clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-'+i+'.png)';
@@ -130,20 +115,6 @@ window.addEventListener('DOMContentLoaded', function () {
 				      i = 0;  
 				    }
 				    slides[i].style.display = 'block';
-				
-				/*slides[0].style.display = 'none';
-				slides[1].style.display = 'block';*/
-				if ( i == 1) {
-				man.value = '';
-				girl.value = 'Женский';
-				man.checked = '';
-				girl.checked = 'checked';
-				} else {
-						man.value = 'Мужской';
-						girl.value = '';
-						man.checked = 'checked';
-						girl.checked = '';
-				}
 				personDiv = 'photo photo-'+i+'';
 				skin.style.backgroundImage = 'url(../img/skin/skin-'+i+'.png)';
 				clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-'+i+'.png)';
@@ -156,37 +127,17 @@ window.addEventListener('DOMContentLoaded', function () {
 		//End slider
 
 		man.addEventListener('click', function() {
-			
-			slides[2].style.display = 'none';
-			slides[1].style.display = 'none';
-			slides[0].style.display = 'block';
-			i = 0;
 			man.value = 'Мужской';
 			girl.value = '';
 			man.checked = 'checked';
 			girl.checked = '';
-			personDiv = 'photo photo-'+i+'';
-			skin.style.backgroundImage = 'url(../img/skin/skin-'+0+'.png)';
-			clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-'+0+'.png)';
-			hair.style.backgroundImage = 'url(../img/hair/construct/hair-'+0+'.png)';
 		});
 
 		girl.addEventListener('click', function() {
-			// man.value = '';
-			// girl.value = 'Женский';
-			slides[2].style.display = 'none';
-			slides[0].style.display = 'none';
-			slides[1].style.display = 'block';
 			man.value = '';
 			girl.value = 'Женский';
 			man.checked = '';
 			girl.checked = 'checked';
-			personDiv = 'photo photo-1';
-			i = 1;
-			skin.style.backgroundImage = 'url(../img/skin/skin-'+1+'.png)';
-			clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-'+1+'.png)';
-			hair.style.backgroundImage = 'url(../img/hair/construct/hair-'+1+'.png)';
-
 		});
 
 		
