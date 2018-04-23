@@ -190,6 +190,10 @@ window.addEventListener('DOMContentLoaded', function () {
 			slides[1].style.display = 'none';
 			slides[0].style.display = 'block';
 			personDiv = 'photo photo-1';
+			skin.style.backgroundImage = 'url(../img/skin/skin-1.png)';
+			clothes.style.backgroundImage = 'url(../img/clothes/construct/clothes-1.png)';
+			hair.style.backgroundImage = 'url(../img/hair/construct/hair-1.png)';
+
 
 		});
 
