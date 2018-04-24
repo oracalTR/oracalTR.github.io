@@ -128,12 +128,41 @@
           height: 195px;
           margin-right: 30px;
           background-size: cover; }
+          .main-cards-item .candidate-block .photo-01 {
+            background: url(../img/candidate-0.png) center no-repeat;
+          }
+          .main-cards-item .candidate-block .photo-10 {
+            background: url(../img/candidate-1.png) center no-repeat;
+          }
           .main-cards-item .candidate-block .photo-0 {
-            background: url(../img/candidate-0.png) center no-repeat; }
+            background: url(../img/construct-0.png) center no-repeat;
+            background-size: 70% }
           .main-cards-item .candidate-block .photo-1 {
-            background: url(../img/candidate-1.png) center no-repeat; }
+            background: url(../img/construct-1.png) center no-repeat;
+            background-size: 70% }
           .main-cards-item .candidate-block .photo-2 {
-            background: url(../img/candidate-2.png) center no-repeat; 
+            background: url(../img/construct-2.png) center no-repeat;
+            background-size: 70% 
+          }
+          .main-cards-item .candidate-block .photo-3 {
+            background: url(../img/construct-3.png) center no-repeat;
+            background-size: 70% 
+          }
+          .main-cards-item .candidate-block .photo-4 {
+            background: url(../img/construct-4.png) center no-repeat;
+            background-size: 70% 
+          }
+          .main-cards-item .candidate-block .photo-5 {
+            background: url(../img/construct-5.png) center no-repeat;
+            background-size: 70% 
+          }
+          .main-cards-item .candidate-block .photo-6 {
+            background: url(../img/construct-6.png) center no-repeat;
+            background-size: 70% 
+          }
+          .main-cards-item .candidate-block .photo-7 {
+            background: url(../img/construct-7.png) center no-repeat;
+            background-size: 70% 
           }
         .main-cards-item .candidate-block .result {
           display: -webkit-box;
@@ -593,6 +622,9 @@
       width: 100%;
       padding: 10px;
       text-align: center;
+    }
+    .show {
+      display: none;
     }
 
 /*# sourceMappingURL=style.css.map */
